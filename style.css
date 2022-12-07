@@ -159,9 +159,10 @@ h1, h2, h3 {
 .team-container2{
     margin: 20px 40px;
   }
+
 .team-container3{
     margin: 20px 40px;
-  }
+}
   
   .team-title {
     text-align: center;
@@ -184,8 +185,8 @@ h1, h2, h3 {
   }
   
   .team-member .profile-img {
-    height: 260px;
-    width: 260px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     filter: grayscale(100%);
     cursor: pointer;
