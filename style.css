@@ -21,10 +21,7 @@ h1, h2, h3 {
     margin: auto;
     width: 100%;
     align-items: center;
-    
-    
     border-radius: 0.5rem;
-    background-color: rgb(255, 255, 255);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color:  rgb(18, 21, 55);
 }
@@ -110,9 +107,11 @@ h1, h2, h3 {
   }
 
   img {
+    align-items: center;
     max-width: 100%;
     height: auto;
     display: block;
+    background-color: transparent;
   }
   #image-div img {
     margin: auto;
