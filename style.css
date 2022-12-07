@@ -117,6 +117,7 @@ h1, h2, h3 {
   #image-div img {
     margin: auto;
     align-items: center;
+    background-color: transparent;
   }
 
   /* About */
@@ -185,12 +186,10 @@ h1, h2, h3 {
   }
   
   .team-member .profile-img {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
-    filter: grayscale(100%);
-    cursor: pointer;
-    transition: 400ms;
+    
   }
   
   .team-member:hover .profile-img {
@@ -392,6 +391,6 @@ h1, h2, h3 {
   
   @keyframes background-color {
       100% {
-        background-color: #939496;
+        background-color: rgb(125, 132, 231);
       }
   }
