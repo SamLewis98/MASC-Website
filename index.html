@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASC Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">MASC <span>Hub</span></a></div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#standards">Standards</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-welcome">
+                   <!--  <p>Hello, welcome to the</p>-->
+                </div>
+                <div id="image-div">
+                    <img src="images/MascHub-logo.png" width="700" height="300" alt="Survey form icon">
+                  </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="about-title">About us</h2>
+            <div class="about-content">
+               <p>
+                The MASC hub was founded in 2020 with the aim of maintaining business systems, focusing on stratetic capability and fixing technical debt. We are currently a small team built up of 2 JADE developers, a .NET developer and 3 system testers.
+               </p>
+              <h2 class="about-title">Meet the Team</h2>
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the team-->
+    <div class="team-container">
+        <div class="team">
+            <img src="/images/profilePicture.png" width="300" height="200" alt="profile picture">
+            <h3 class="name">Ben</h3>
+            <h4>Software Engineering Leader</h4>
+            <p>test text</p>
+        
+   
+    
+            <img src="/images/profilePicture.png" width="300" height="200" alt="profile picture">
+            <h3 class="name">Nick</h3>
+            <h4>Senior Developer</h4>
+            <p>Joined Skipton in 20**, previously based in New Zealand.</p>
+       
+
+    
+            <img src="/images/profilePicture.png" width="300" height="200" alt="profile picture">
+            <h3 class="name">Sam</h3>
+            <h4>Developer</h4>
+            <p>Joined Skipton in 2018, previously worked in customer comminications and started as a trainee software engineer 18 months ago.</p>
+       
+
+   
+            <img src="/images/profilePicture.png" width="300" height="200" alt="profile picture">
+            <h3 class="name">Olu</h3>
+            <h4>Developer</h4>
+            <p>test text</p>
+      
+
+            <img src="/images/profilePicture.png" width="300" height="200" alt="profile picture">
+            <h3 class="name">Chris</h3>
+            <h4>System Tester</h4>
+            <p>test text</p>
+      
+
+            <img src="/images/profilePicture.png" width="300" height="200" alt="profile picture">
+            <h3 class="name">Josh</h3>
+            <h4>System Tester</h4>
+            <p>test text</p>
+        
+
+            <img src="/images/profilePicture.png" width="300" height="200" alt="profile picture">
+            <h3 class="name">Nathyn</h3>
+            <h4>System Tester</h4>
+            <p>test text</p>
+        </div>
+    </div>
+
+    <!-- Feedback -->
+    <section class="feedback" id="feedback">
+        <div class="container">
+            <div class="header">
+            <div class="column-header">
+                <h2 id="title">Feedback Form</h2>
+                <p id="description">We'd like your help! We want to know a little more about your experience with us so that we can continue to improve the service we provide.</p>
+                </div>
+                <div class="column-image">
+                    <div id="image-div">
+                      <img src="images/SurveyFormLogo.png" width="500" height="400" alt="Survey form icon">
+                    </div>
+                </div>
+            </div>
+        
+        
+            <form id="survey-form">
+                <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="form-control"
+                    placeholder="Enter your name..."
+                    required
+                />
+                </div>
+
+                <div class="form-group">
+                    <p>Business Area</p>
+                    <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Please select your business area</option>
+                    <option value="Digital">Digital</option>
+                    <option value="Skipton-Direct">Skipton Direct</option>
+                    <option value="Systems Development">Systems Development</option>
+                    <option value="FA">FA</option>
+                    <option value="Audit">Audit</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Operations">Operations</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label id="ref" for="ref">LANDesk reference or User Story:</label>
+                    <input
+                    type="booking-ref"
+                    name="booking-ref"
+                    id="booking-ref"
+                    class="form-control"
+                    placeholder="Please enter the LANDesk reference or User Story we helped with"
+                    required
+                    />
+                </div>
+
+                <div class="form-group">
+                    <p>
+                    Please confirm who in the MASC hub you worked with (Check all that apply)
+                    </p>
+            
+                    <label>
+                    <input
+                        name="prefer"
+                        value="Chris Kellys"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Chris Kelly</label>
+                    
+                    <label>
+                    <input
+                        name="prefer"
+                        value="Josh Williams"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Josh Williams</label>
+                    
+                    <label>
+                    <input
+                        name="prefer"
+                        value="Nick Fleury"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Nick Fleury</label>
+                    
+                    <label>
+                    <input
+                        name="prefer"
+                        value="Olu Orija"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Olu Orija</label>
+                
+                    <label>
+                    <input
+                        name="prefer"
+                        value="Nathyn Kerchoff"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Nathyn Kerchoff</label>
+                    
+                    <label>
+                    <input
+                        name="prefer"
+                        value="Sam Lewis"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Sam Lewis</label>
+                </div>
+                
+            
+                <div class="form-group">
+                    <p>Overall, how would you rate the Service?</p>
+                    <label>
+                    <input
+                        name="user-rate"
+                        value="excellent"
+                        type="radio"
+                        class="input-radio"
+                        checked
+                    />Excellent</label>
+                    <label>
+                    <input
+                        name="user-rate"
+                        value="very-good"
+                        type="radio"
+                        class="input-radio"
+                    />Very good</label>
+            
+                    <label>
+                    <input
+                        name="user-rate"
+                        value="good"
+                        type="radio"
+                        class="input-radio"
+                    />Good</label>
+                    
+                    <label>
+                    <input
+                        name="user-rate"
+                        value="fair"
+                        type="radio"
+                        class="input-radio"
+                    />Fair</label>
+                    
+                    <label>
+                    <input
+                        name="user-rate"
+                        value="poor"
+                        type="radio"
+                        class="input-radio"
+                    />Poor</label>
+                </div>
+                
+                
+                
+                <div class="form-group">
+                    <p>Would you recommend us to a friend?</p>
+                    <label>
+                    <input
+                        name="user-recommend"
+                        value="definitely"
+                        type="radio"
+                        class="input-radio"
+                        checked
+                    />Definitely</label>
+                    <label>
+                    <input
+                        name="user-recommend"
+                        value="maybe"
+                        type="radio"
+                        class="input-radio"
+                    />Maybe</label>
+            
+                    <label>
+                    <input
+                        name="user-recommend"
+                        value="not-sure"
+                        type="radio"
+                        class="input-radio"
+                    />Not sure</label>
+                </div>
+            
+                
+                <div class="form-group">
+                    <p>Any comments or suggestions?</p>
+                    <textarea
+                    id="comments"
+                    class="input-textarea"
+                    name="comment"
+                    placeholder="Enter your comment here..."></textarea>
+                </div>
+            
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                    Submit
+                    </button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </section>
+      
+       <section class="footer">
+          <p> Design & Development - Sam Lewis </p>
+        </section>
+
+</body>
+</html>

@@ -1,0 +1,340 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+h1, h2, h3 {
+    align-items: center;
+    font-size: 3rem;
+    line-height: 2;
+    margin-bottom: 4rem;
+    color: rgb(12, 16, 69);
+  }
+
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+    
+    
+    border-radius: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:  rgb(18, 21, 55);
+}
+
+/*navigation bar */
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    background: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar.sticky{
+    padding: 30px 0;
+    background: rgb(255, 255, 255);
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu li a{
+    color: rgb(12, 16, 69);
+    font-size: 20px;
+    margin-left: 25px;
+    font-weight: 500;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .logo a{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(29, 114, 164);
+
+}
+.navbar .logo.sticky{
+    background: #fff;
+}
+.navbar .logo span{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(12, 16, 69);
+}
+
+ /* Change the color of links on hover */
+ .navbar .menu li a:hover {
+    color: rgb(29, 114, 164);
+  }
+
+  /* Add a color to the active/current link */
+  .navbar .menu li a.active {
+    color: rgb(248, 255, 54);
+  }
+
+  
+  /* HOME */
+  .home {
+    display: flex;
+    color: rgb(18, 21, 55);
+    background: url("/images/17580.jpg");
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-size: auto;
+    height: 100vh;
+    align-items: center;
+  }
+
+  .home .max-width{
+    margin: auto 0 auto 40px;
+  }
+  .home .home-content .text-welcome{
+    font-size: 25px;
+
+  }
+  .home .home-content .masc-text{
+    font-size: 50px;
+    font-weight: 600;
+
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  #image-div img {
+    margin: auto;
+    align-items: center;
+  }
+
+  /* About */
+  .about{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+
+  }
+  .about .about-content{
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+  }
+  .about .about-title{
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(12, 16, 69);
+    font-size: 30px;
+    font-weight: 500;
+    margin-right: 6%;
+    
+  }
+  .about .about-title::before{
+    position: absolute;
+  }
+
+  .about .about-team{
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(12, 16, 69);
+    font-size: 10px;
+    font-weight: 300;
+  }
+
+ /* Meet the team */
+ .team-container{
+    margin:20px 40px;
+    color: rgb(12, 16, 69);
+ }
+.team{
+   display: flex;
+    justify-content: space-around;
+    margin: 20px 80px;
+}
+
+.name{
+    margin-top: 30px;
+    font-size: 10px;
+}
+
+h4{
+    font-size: 8px;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Feedback */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  input,
+  button,
+  select,
+  textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  
+  button {
+    border: none;
+  }
+  
+  .container {
+    width: 100%;
+    margin: 6rem auto 6rem auto;
+    box-shadow: 0 0.2rem 1.3rem 0.2rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:  rgb(18, 21, 55);
+  }
+  
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 976px) {
+    .container {
+      max-width: 920px;
+    }
+  }
+  
+  .header {
+    padding: 4.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  /*Header*/
+  .column-header {
+    float: left;
+    width: 54%;
+    padding-top: 5rem;
+    margin-right: 6%;
+  }
+  
+  .column-image {
+    float: left;
+    width: 40%;
+  }
+  
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .column-header,
+    .column-image {
+      width: 100%;
+      margin: 0;
+    }
+    #image-div img {
+      margin: auto;
+    }
+  }
+  
+  /* FeedbackForm*/
+  
+  form {
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+  }
+  
+  .form-group {
+    margin: 0 auto 2rem auto;
+    padding: 0.5rem;
+  }
+  
+  .form-control {
+    display: block;
+    width: 100%;
+    height: 4.5rem;
+    padding: 1rem;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .form-control:focus {
+    border-color: #a6d8e2;
+    outline: 0;
+    box-shadow: 0 0 1rem 0.2rem rgba(205, 240, 247, 0.25);
+  }
+  
+  .input-radio,
+  .input-checkbox {
+    display: inline-block;
+    margin-right: 1rem;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+  }
+  
+  .input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 1rem;
+    resize: vertical;
+  }
+  
+  .submit-button {
+    display: inline-block;
+    width: 10rem;
+    padding: 1rem;
+    background: #4a4a4a;
+    color: #fff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+  }
+  
+  @keyframes background-color {
+      100% {
+        background-color: #939496;
+      }
+  }
