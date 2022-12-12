@@ -201,11 +201,12 @@ h1, h2, h3 {
     height: 30px;
     width: 30px;
     border-radius: 50%;
+     border: rgb(12, 16, 69);
     
   }
   
   .team-member:hover .profile-img {
-    filter: grayscale(0);
+      border: rgb(248, 248, 0);
   }
   
   .name {
