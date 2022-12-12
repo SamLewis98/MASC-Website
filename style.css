@@ -252,45 +252,29 @@ h1, h2, h3 {
     }
   }
 
-    /* Achievements */
-    .achievements .achievements-title{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: rgb(12, 16, 69);
-        font-size: 30px;
-        font-weight: 500;
-        margin-right: 6%;
-        margin-bottom: 2%;
-        text-align: center;
+/* Achievements */
+
+   .achievements-container{
+        margin: 20px 40px;
+        margin-top: 2px;
     }
-    .achievements .carousel .card {
-        background: rgb(29, 114, 164);
-        border-radius: 6px;
-        padding: 25px 35px;
-        transition: all 0.3s ease;
+    .cards .card .content .img{
+        height: 130px;
+        width: 130px;
     }
-    .achievements .carousel .card .box{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-    .achievements .carousel .card:hover .box{
-        transform: scale(1.05);
-    }
-    .achievements .carousel .card .text{
-        font-size: 15px;
-        font-weight: 500;
-        margin: 10px 0 7px 0;
-    }
-    .achievements .carousel .card img{
-        height: 30px;
-        width: 30px;
+    .card .content .img img{
+        height: 100%;
+        width: 100%;
         object-fit: cover;
-        border-radius: 50%;
-        border:  5px rgb(12, 16, 69);
     }
-    
+    .card .content .details .achievement-title{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .card .content .details .achievement-desc{
+        font-size: 20px;
+        color: brown;
+    }
 
   /* Feedback */
   img {
