@@ -257,10 +257,29 @@ h1, h2, h3 {
    .achievements-container{
         margin: 20px 40px;
         margin-top: 2px;
+        background: #d3d7da;
+    }
+    .main-card .cards{
+        display:flex;
+        justify-content: space-between;
+    }
+    .main-card .cards .card{
+        width: calc(100%/3 -10px); /* Replace 3 with how many achievements there are */
+        padding: 30px;
+        border-radius: 24px;
+    }
+    .cards .card .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
     }
     .cards .card .content .img{
-        height: 130px;
-        width: 130px;
+        height: 70px;
+        width: 70px;
+        margin-bottom: 14px;
     }
     .card .content .img img{
         height: 100%;
@@ -270,10 +289,11 @@ h1, h2, h3 {
     .card .content .details .achievement-title{
         font-size: 20px;
         font-weight: 500;
+        color:  rgb(12, 16, 69);
     }
     .card .content .details .achievement-desc{
         font-size: 20px;
-        color: brown;
+        color:  rgb(12, 16, 69);
     }
 
   /* Feedback */
