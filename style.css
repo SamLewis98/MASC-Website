@@ -212,6 +212,7 @@ h1, h2, h3 {
   .name {
     margin-top: 30px;
     font-size: 35px;
+    margin-bottom: 0%;
   }
   
   .team-member h5 {
@@ -222,7 +223,7 @@ h1, h2, h3 {
   }
   
   .team-member p {
-    font-size: 16px;
+    font-size: 15px;
     margin-top: 20px;
     text-align: justify;
   }
@@ -256,8 +257,6 @@ h1, h2, h3 {
   }
 
 /* Achievements*/
-  
-  
   .achievement-container{
     margin: 0px 40px;
     margin-top: -90px;
@@ -321,7 +320,8 @@ h1, h2, h3 {
   }
   .card .content .achievement-desc{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
+    margin-top: 1%;
     
   }
   
@@ -338,56 +338,51 @@ h1, h2, h3 {
       width: 100%;
     }
   }
-/* Achievements 
 
-   .achievements-container{
-        margin: 20px 40px;
-        margin-top: 2px;
-        background: #d3d7da;
-        padding: 80px 0 ;
-    }
-    .achievements-container .main-card{
-        width: 200%;
-        background: aqua;
-        display: flex;
-    }
-    .main-card .cards{
-        display:flex;
-        justify-content: space-between;
-        margin: 0 20px;
-    }
-    .main-card .cards .card{
-        width: calc(100%/3 -10px); 
-        padding: 30px;
-        border-radius: 24px;
-    }
-    .cards .card .content{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        
-    }
-    .cards .card .content .img{
-        height: 70px;
-        width: 70px;
-        margin-bottom: 14px;
-    }
-    .card .content .img img{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-    .card .content .details .achievement-title{
-        font-size: 20px;
-        font-weight: 500;
-        color:  rgb(12, 16, 69);
-    }
-    .card .content .details .achievement-desc{
-        font-size: 20px;
-        color:  rgb(12, 16, 69);
-    }*/
+  /* Standards */
+  
+  .standards-container {
+    width: 350px;
+    height: 500px;
+    perspective: 800px;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .container:hover > .card {
+    cursor: pointer;
+    transform: rotateY(180deg);
+  }
+  
+  .card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+  }
+  
+  .front,
+  .back {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+ 
+  
+  .back {
+    background-color: #3a3a3a;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
 
   /* Feedback */
   img {
