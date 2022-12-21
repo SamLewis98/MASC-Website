@@ -344,13 +344,19 @@ h1, h2, h3 {
 /* THE MAINCONTAINER HOLDS EVERYTHING */
 .maincontainer{
   position: relative;
-  width: 450px;
-  height: 320px;
+  margin-left: 10px;
   margin-top: 120px;
+  margin-bottom: 0;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
+}
+.maincontainer .thecard{
+    width: calc(100% / 3 - 10px);
+    
+    border-radius: 12px;
+    padding: 30px;
 }
 
 /* THE CARD HOLDS THE FRONT AND BACK FACES */
@@ -358,16 +364,15 @@ h1, h2, h3 {
   position: relative;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 400px;
+  height: 300px;
   border-radius: 10px;
   transform-style: preserve-3d;
   transition: all 0.8s ease;
   align-items: center;
   text-align: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- 
-  
+ display: inline-block;
 }
 
 /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
@@ -385,7 +390,10 @@ h1, h2, h3 {
   border-radius: 10px;
   backface-visibility: hidden;
   overflow: hidden;
-  background: rgb(29, 114, 164);
+  background: #fafafa;
+  justify-content: center;
+  
+  border-color: rgb(29, 114, 164);
   color: rgb(12, 16, 69);
 }
 
@@ -400,11 +408,23 @@ h1, h2, h3 {
   border-radius: 10px;
   backface-visibility: hidden;
   overflow: hidden;
-  background: #fafafa;
-  color: #333;
-  text-align: center;
+  background:rgb(12, 16, 69);
+  color: rgb(255, 255, 255);
+  text-align: left;
   transform: rotateY(180deg);
 }
+/* Media query below  makess the cards stack when the page is smaller */
+@media (max-width: 768px) {
+    .maincontainer .thecard{
+      margin: 20px 0 10px 0;
+      width: calc(100% / 3 - 10px);
+    }
+  }
+  @media (max-width: 600px) {
+    .maincontainer .thecard{
+      width: 100%;
+    }
+  }
 
 
   /* Feedback */
