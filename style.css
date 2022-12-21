@@ -36,6 +36,7 @@ h1, h2, h3 {
     padding: 10px 0;
     background: rgb(255, 255, 255);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
     
     
 }
@@ -186,6 +187,7 @@ h1, h2, h3 {
     margin-top: 3%;
     margin-left: 1%;
     
+    
   }
   .profiles {
     display: flex;
@@ -262,6 +264,9 @@ h1, h2, h3 {
     margin-top: -90px;
     margin-left: 0%;
     padding: 80px 0 ;
+    position: relative;
+    padding-bottom: 50px;
+    
     
   }
   .achievement-container .main-card{
@@ -343,20 +348,23 @@ h1, h2, h3 {
 
 /* THE MAINCONTAINER HOLDS EVERYTHING */
 .maincontainer{
-  position: relative;
+margin-top: 15%;
+position: relative;
   margin-left: 10px;
-  margin-top: 120px;
-  margin-bottom: 0;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  
+  
+  
 
 }
 .maincontainer .thecard{
     width: calc(100% / 3 - 10px);
-    
+    position: inherit;
     border-radius: 12px;
     padding: 30px;
+    
 }
 
 /* THE CARD HOLDS THE FRONT AND BACK FACES */
@@ -410,19 +418,22 @@ h1, h2, h3 {
   overflow: hidden;
   background:rgb(12, 16, 69);
   color: rgb(255, 255, 255);
+  text-indent: 10px;
   text-align: left;
   transform: rotateY(180deg);
 }
-/* Media query below  makess the cards stack when the page is smaller */
+/* Media query below  makess the cards stack when the screne page is smaller */
 @media (max-width: 768px) {
     .maincontainer .thecard{
       margin: 20px 0 10px 0;
       width: calc(100% / 3 - 10px);
+      flex-wrap: wrap;
     }
   }
   @media (max-width: 600px) {
     .maincontainer .thecard{
       width: 100%;
+      flex-wrap: wrap;
     }
   }
 
