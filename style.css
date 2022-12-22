@@ -348,13 +348,12 @@ h1, h2, h3 {
 
 /* THE MAINCONTAINER HOLDS EVERYTHING */
 .maincontainer{
-margin-top: 15%;
+margin-top: 20%;
 position: relative;
   margin-left: 10px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-    padding-top: 15px;
   
   
   
@@ -402,8 +401,16 @@ position: relative;
   background: #fafafa;
   justify-content: center;
   
+  
   border-color: rgb(29, 114, 164);
   color: rgb(12, 16, 69);
+}
+.thefront h2{
+    align-items: center;
+    font-size: 2rem;
+    line-height: 2;
+    margin-bottom: 4rem;
+    color: rgb(12, 16, 69); 
 }
 
 
@@ -419,20 +426,19 @@ position: relative;
   overflow: hidden;
   background:rgb(12, 16, 69);
   color: rgb(255, 255, 255);
-  text-indent: 10px;
   text-align: left;
   transform: rotateY(180deg);
 }
 /* Media query below  makess the cards stack when the screne page is smaller */
 @media (max-width: 768px) {
-    .maincontainer .thecard{
+    .maincontainer, .thecard, .thefront, .theback{
       margin: 20px 0 10px 0;
       width: calc(100% / 3 - 10px);
       flex-wrap: wrap;
     }
   }
   @media (max-width: 600px) {
-    .maincontainer .thecard{
+    .maincontainer, .thecard, .thefront, .theback{
       width: 100%;
       flex-wrap: wrap;
     }
