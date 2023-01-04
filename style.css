@@ -337,6 +337,7 @@ h1, h2, h3 {
     margin-top: 1%;
   }
   
+  
   @media (max-width: 768px) {
     .main-card .cards .card{
       margin: 20px 0 10px 0;
@@ -376,6 +377,7 @@ position: relative;
     position: inherit;
     border-radius: 12px;
     padding: 10px;
+    margin-left: 110px;
 }
 
 /* thecard class holds the front and back of the cards */
@@ -392,6 +394,7 @@ position: relative;
   text-align: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  display: inline-block;
+ align
  
 }
 
@@ -448,13 +451,14 @@ position: relative;
 
     .standards-container{
         flex-wrap: wrap;
+        margin: auto;
     }
      .thecard, .card-front, .card-back{
         width: 100%;
         flex-wrap: wrap;
     }
     .sta-title{
-        margin-bottom: 22%;
+        margin-bottom: 55%;
         text-align: center;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: rgb(12, 16, 69);
@@ -466,10 +470,14 @@ position: relative;
   @media (max-width: 600px) {
     .standards-container{
         margin-top: 95%;
+        width: 100%;
     } 
     .thecard, .card-front, .card-back{
         width: 100%;
       flex-wrap: wrap;
+    }
+    .sta-title{
+        margin-bottom: 10%;
     }
   }
 
