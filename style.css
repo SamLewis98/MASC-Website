@@ -1,3 +1,4 @@
+/* Apply to all */
 *{
     margin: 0px;
     padding: 0px;
@@ -5,6 +6,7 @@
     text-decoration: none;
 }
 html{
+    /* Create spacing at the top of each section */
     scroll-padding-top: 100px;
 }
 
@@ -29,7 +31,7 @@ h1, h2, h3 {
     
 }
 
-/*navigation bar */
+/* Navigation Bar */
 .navbar{
     position: fixed;
     width: 100%;
@@ -37,12 +39,10 @@ h1, h2, h3 {
     background: rgb(255, 255, 255);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #fff;
-    z-index: 1000;
-    
-    
+    z-index: 1000; /* Makes sure the navbar sits on top of all containers */
 }
 
-.navbar.sticky{
+.navbar.sticky{ /* creates a sticky navbar  */
     padding: 30px 0;
     background: rgb(255, 255, 255);
 }
@@ -53,26 +53,28 @@ h1, h2, h3 {
     justify-content: space-between;
 }
 
-.navbar .menu li a{
+.navbar .menu li a{ /* Sets the navbar menu list items properties */
     color: rgb(12, 16, 69);
     font-size: 20px;
     margin-left: 25px;
     font-weight: 500;
 }
+
 .navbar .menu li{
     list-style: none;
     display: inline-block;
 }
+
 .navbar .logo a{
     font-size: 40px;
     font-weight: 600;
     color: rgb(29, 114, 164);
-
 }
+
 .navbar .logo.sticky{
     background: #fff;
-    
 }
+
 .navbar .logo span{
     font-size: 40px;
     font-weight: 600;
@@ -89,12 +91,11 @@ h1, h2, h3 {
     color: rgb(248, 255, 54);
   }
 
-  
-  /* HOME */
+  /* Home Section */
   .home {
     display: flex;
     color: rgb(18, 21, 55);
-    background: url("/images/17580.jpg");
+    background: url("/images/17580.jpg"); /* Sets background image from the images folder */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-size: auto;
     height: 100vh;
@@ -111,7 +112,6 @@ h1, h2, h3 {
   .home .home-content .masc-text{
     font-size: 50px;
     font-weight: 600;
-
   }
 
   img {
@@ -128,32 +128,27 @@ h1, h2, h3 {
     align-content: center;
   }
 
-  /* About */
+  /* About Section */
   .about{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-
   }
+
   .about .about-content{
     align-items: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     margin-bottom: 10px;
   }
+
   .about .about-title{
-   
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(12, 16, 69);
     font-size: 30px;
     font-weight: 500;
     margin-right: 6%;
     margin-bottom: 2%;
-    
-    
   }
-  /*.about .about-title::before{
-    position: absolute;
-  }*/
 
   .about .about-team{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -163,21 +158,20 @@ h1, h2, h3 {
   }
 
  /* Meet the team */
-
-.team-container1{
+.team-container1{ /* Holds a set of 3 profiles */
     margin: 20px 40px;
     margin-top: 2px;
-    
   }
-.team-container2{
+
+.team-container2{/* Holds a set of 3 profiles */
     margin: 20px 40px;
   }
 
-.team-container3{
+.team-container3{/* Holds a set of 3 profiles */
     margin: 20px 40px;
 }
   
-  .team-title {
+.team-title {
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(12, 16, 69);
@@ -187,50 +181,49 @@ h1, h2, h3 {
     margin-bottom: 2;
     margin-top: 3%;
     margin-left: 1%;
-    
-    
   }
-  .profiles {
+
+  .profiles { /* Profiles - set of 3 profile */
     display: flex;
     justify-content: space-around;
     margin: 20px 80px;
   }
   
-  .team-member {
+  .profile {
     flex-basis: 260px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
-  .team-member .profile-img {
-    height: 30px;
-    width: 30px;
+  .profile .profile-img {
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
-     border: rgb(12, 16, 69);
+    border: rgb(12, 16, 69);
     
   }
   
-  .team-member:hover .profile-img {
-      border: rgb(248, 248, 0);
-  }
-  
-  .name {
+  .name { /* Colleague name */
     margin-top: 30px;
     font-size: 35px;
+    font-weight: 80;
     margin-bottom: 0%;
   }
   
-  .team-member h5 {
+  .profile h5 { /* Job title */
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 20;
     letter-spacing: 3px;
-    color: #ccc;
+    color: rgb(12, 16, 69);
   }
   
-  .team-member p {
+  .profile p { /* Description */
     font-size: 15px;
     margin-top: 20px;
     text-align: justify;
+    color: rgb(12, 16, 69);
   }
   
+  /* @ media section is used to apply styles for different devices */
   @media only screen and (max-width: 1150px) {
     .profiles {
       flex-direction: column;
@@ -259,7 +252,8 @@ h1, h2, h3 {
     }
   }
 
-/* Achievements*/
+/* Achievements Section */
+/* Main container, holds everything*/
   .achievement-container{
     margin: 0px 40px;
     margin-top: -90px;
@@ -267,14 +261,14 @@ h1, h2, h3 {
     padding: 80px 0 ;
     position: relative;
     padding-bottom: 50px;
-    
-    
   }
+  /* Contains a set of 3 achievment cards*/
   .achievement-container .main-card{
     width: 200%;
     transition: 1s;
   }
   
+  /* Individual achievement cards*/
   .achievement-container .main-card .cards{
     width: calc(100% / 2 - 10px);
     display: flex;
@@ -289,12 +283,11 @@ h1, h2, h3 {
     padding: 30px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
     transition: all 0.4s ease;
-    
-
   }
   .main-card .cards .card:hover{
-    transform: translateY(-15px);
+    transform: translateY(-15px); /* add small animation when card is hovered over*/
   }
+
   .cards .card .content{
     width: 100%;
     display: flex;
@@ -303,12 +296,13 @@ h1, h2, h3 {
     align-items: center;
     text-align: center;
   }
+
+  /* Controls the img within the achievement card*/
   .cards .card .content .img{
     height: 130px;
     width: 130px;
     border-radius: 50%;
     padding: 3px;
-    
     margin-bottom: 14px;
   }
 
@@ -319,18 +313,18 @@ h1, h2, h3 {
     border-radius: 50%;
     object-fit: cover;
   }
+/* Controls the content of the card - headers and para */
   .card .content .achievement-title{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     font-weight: 500;
   }
+
   .card .content .achievement-desc{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15px;
     margin-top: 1%;
-    
   }
-  
   
   @media (max-width: 768px) {
     .main-card .cards .card{
@@ -338,37 +332,32 @@ h1, h2, h3 {
       width: calc(100% / 2 - 10px);
     }
   }
+
   @media (max-width: 600px) {
     .main-card .cards .card{
-      /* margin: 20px 0 10px 0; */
       width: 100%;
     }
   }
+  
+  /* Standards Section */
 
-  /* Standards */
-
-/* THE MAINCONTAINER HOLDS EVERYTHING */
-.maincontainer{
+/* standards-container holds everything */
+.standards-container{
 margin-top: 13%;
 position: relative;
   margin-left: 10px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
-  
-  
-
 }
-.maincontainer .thecard{
+.standards-container .thecard{
     width: calc(100% / 3 - 10px);
     position: inherit;
     border-radius: 12px;
     padding: 30px;
-    
 }
 
-/* THE CARD HOLDS THE FRONT AND BACK FACES */
+/* thecard class holds the front and back of the cards */
 .thecard{
   position: relative;
   top: 0;
@@ -384,13 +373,13 @@ position: relative;
  display: inline-block;
 }
 
-/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+/* Controls the transformation (flip) on hover */
 .thecard:hover{
   transform: rotateY(180deg);
 }
 
-/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
- .thefront{
+/* The front of the card, which is shown as default*/
+ .card-front{
   position: absolute;
   top: 0;
   left: 0;
@@ -400,13 +389,13 @@ position: relative;
   backface-visibility: hidden;
   overflow: hidden;
   background: #fafafa;
-  justify-content: center;
-  
-  
+  justify-content: center;  
   border-color: rgb(29, 114, 164);
   color: rgb(12, 16, 69);
 }
-.thefront h2{
+
+/* Main title on the front of the card*/
+.card-front h2{
     align-items: center;
     font-size: 2rem;
     line-height: 2;
@@ -416,8 +405,8 @@ position: relative;
 }
 
 
-/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
-.theback{
+/* Back of the card, which is shown when the user hovers over the card */
+.card-back{
   position: absolute;
   top: 0;
   left: 0;
@@ -429,18 +418,19 @@ position: relative;
   background:rgb(12, 16, 69);
   color: rgb(255, 255, 255);
   text-align: left;
-  transform: rotateY(180deg);
+  transform: rotateY(180deg); /* Flips the card 180deg*/
 }
-/* Media query below  makess the cards stack when the screne page is smaller */
+
+/* Media query below  makess the cards stack when the screen page is smaller */
 @media (max-width: 768px) {
-    .maincontainer, .thecard, .thefront, .theback{
+    .standards-container, .thecard, .card-front, .card-back{
       margin: 20px 0 10px 0;
       width: calc(100% / 3 - 10px);
       flex-wrap: wrap;
     }
   }
   @media (max-width: 600px) {
-    .maincontainer, .thecard, .thefront, .theback{
+    .standards-container, .thecard, .card-front, .card-back{
       margin-top: 15%;
         width: 100%;
       flex-wrap: wrap;
@@ -475,7 +465,8 @@ position: relative;
     border: none;
   }
   
-  .container {
+    /* Main container that holds all feedback content */
+  .feedback-container {
     width: 100%;
     margin: 6rem auto 6rem auto;
     box-shadow: 0 0.2rem 1.3rem 0.2rem rgba(0, 0, 0, 0.1);
@@ -486,13 +477,13 @@ position: relative;
   }
   
   @media (min-width: 576px) {
-    .container {
+    .feedback-container {
       max-width: 540px;
     }
   }
   
   @media (min-width: 976px) {
-    .container {
+    .feedback-container{
       max-width: 920px;
     }
   }
@@ -532,7 +523,7 @@ position: relative;
     }
   }
   
-  /* FeedbackForm*/
+  /* Feedback Form */
   
   form {
     padding: 2.5rem;
