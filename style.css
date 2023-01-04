@@ -1,460 +1,628 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MASC Hub</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-</head>
-<body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="#home">MASC <span>Hub</span></a></div>
-            <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#standards">Standards</a></li>
-                <li><a href="#feedback">Feedback</a></li>
-            </ul>
-        </div>
-    </nav>
+/* Apply to all */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    /* Create spacing at the top of each section */
+    scroll-padding-top: 100px;
+}
 
-    <!-- Home-->
-    <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div id="image-div">
-                    <img src="images/MascHub-logo.png" width="700" height="300"  alt="Masc Hub Logo">
-                  </div>
-            </div>
-        </div>
-    </section>
+h1, h2, h3 {
+    align-items: center;
+    font-size: 3rem;
+    line-height: 2;
+    margin-bottom: 4rem;
+    color: rgb(12, 16, 69);
+  }
+
+
+.max-width{
+    max-width: 1500px;
+    padding: 0 80px;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+    border-radius: 0.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:  rgb(18, 21, 55);
     
-    <script src="script.js"></script>
+}
 
-    <!-- About -->
-    <section class="about" id="about">
-            <div class="max-width">
-                <h2 class="about-title">About us</h2>
-                <div class="about-content">
-                    <p>The MASC hub was founded in 2020 with the aim of maintaining business systems, focusing on stratetic capability and fixing technical debt. We are currently a small hub with a development team built up of 2 JADE developers, a .NET developer and 3 system testers.</p>
-                </div>
-                <h2 class="team-title">Meet The Team</h2>
-            </div>
-        </section>
+/* Navigation Bar */
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    background: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    z-index: 1000; /* Makes sure the navbar sits on top of all containers */
+}
+
+.navbar.sticky{ /* creates a sticky navbar  */
+    padding: 30px 0;
+    background: rgb(255, 255, 255);
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu li a{ /* Sets the navbar menu list items properties */
+    color: rgb(12, 16, 69);
+    font-size: 20px;
+    margin-left: 25px;
+    font-weight: 500;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .logo a{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(29, 114, 164);
+}
+
+.navbar .logo.sticky{
+    background: #fff;
+}
+
+.navbar .logo span{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(12, 16, 69);
+}
+
+ /* Change the color of links on hover */
+ .navbar .menu li a:hover {
+    color: rgb(29, 114, 164);
+  }
+
+  /* Add a color to the active/current link */
+  .navbar .menu li a.active {
+    color: rgb(248, 255, 54);
+  }
+
+  /* Home Section */
+  .home {
+    display: flex;
+    color: rgb(18, 21, 55);
+    background: url("/images/17580.jpg"); /* Sets background image from the images folder */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-size: auto;
+    height: 100vh;
+    align-items: center;
+  }
+
+  .home .max-width{
+    margin: auto 0 auto 40px;
+  }
+  .home .home-content .text-welcome{
+    font-size: 25px;
+
+  }
+  .home .home-content .masc-text{
+    font-size: 50px;
+    font-weight: 600;
+  }
+
+  img {
+    align-items: center;
+    align-content: center;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    background-color: transparent;
+    background-repeat: no-repeat;
+  }
+  #image-div img {
+    margin: auto;
+    align-items: center;
+    background-color: transparent;
+    align-content: center;
+  }
+
+  /* About Section */
+  .about{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+  }
+
+  .about .about-content{
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .about .about-title{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(12, 16, 69);
+    font-size: 30px;
+    font-weight: 500;
+    margin:auto;
     
-    <!-- Meet the team-->
-    <div class="team-container1">
-        <div class="profiles">
+  }
 
-          <div class="profile">
-            <img src="/images/profilePicture.png" class="profile-img">
-            <h3 class="name">Trudy</h3>
-            <h5>Process Manager</h5>
-          <!--  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facilis sint quod.</p>-->
-          </div>
+  .about .about-team{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(12, 16, 69);
+    font-size: 10px;
+    font-weight: 300;
+  }
 
-          <div class="profile">
-            <img src="/images/profilePicture.png" class="profile-img">
-            <h3 class="name">Phil</h3>
-            <h5>Development Leader</h5>
-           <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, eveniet!</p>-->
-          </div>
-            
-          <div class="profile">
-            <img src="/images/profilePicture.png" class="profile-img">
-            <h3 class="name">Ben</h3>
-            <h5>Engineering Leader</h5>
-           <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, eveniet!</p>-->
-          </div>
-        </div>
-    </div>
+ /* Meet the team */
+.team-container1{ /* Holds a set of 3 profiles */
+    margin: 20px 40px;
+    margin-top: px;
+  }
+
+.team-container2{/* Holds a set of 3 profiles */
+    margin: 20px 40px;
+  }
+
+.team-container3{/* Holds a set of 3 profiles */
+    margin: 20px 40px;
+}
+  
+.team-title {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(12, 16, 69);
+    font-size: 30px;
+    font-weight: 500;
+    margin-right: 6%;
+    margin-bottom: 2;
+    margin-top: 3%;
+    margin-left: 1%;
+    margin: auto;
+  }
+
+  .profiles { /* Profiles - set of 3 profile */
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 80px;
+  }
+  
+  .profile {
+    flex-basis: 260px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .profile .profile-img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: rgb(12, 16, 69);
     
-     <div class="team-container2">
-        <div class="profiles">
-
-          <div class="profile">
-            <img src="/images/profilePicture.png" class="profile-img">
-            <h3 class="name">Nick</h3>
-            <h5>Software Engineer</h5>
-         <!--    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facilis sint quod.</p>-->
-          </div>
-
-          <div class="profile">
-            <img src="/images/profilePicture.png" class="profile-img">
-            <h3 class="name">Sam</h3>
-            <h5>Software Engineer</h5>
-         <!--    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facilis sint quod.</p>-->
-          </div>
-
-          <div class="profile">
-            <img src="/images/profilePicture.png" class="profile-img">
-            <h3 class="name">Olu</h3>
-            <h5>Software Engineer</h5>
-        <!--     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facilis sint quod.</p>-->
-          </div>
-        </div>
-     </div>
-
-     <div class="team-container3">
-        <div class="profiles">
-
-          <div class="profile">
-            <img src="/images/profilePicture.png" class="profile-img">
-            <h3 class="name">Chris</h3>
-            <h5>System Tester</h5>
-       <!--      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facilis sint quod.</p>-->
-          </div>
-
-          <div class="profile">
-            <img src="/images/profilePicture.png" class="profile-img">
-            <h3 class="name">Josh</h3>
-            <h5>System Tester</h5>
-        <!--     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facilis sint quod.</p>-->
-          </div>
-
-          <div class="profile">
-            <img src="/images/profilePicture.png" class="profile-img">
-            <h3 class="name">Nathyn</h3>
-            <h5>System Tester</h5>
-         <!--   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facilis sint quod.</p>-->
-          </div>
-        </div>
-        
-     </div>
-
-   <!-- Achievements -->
-   <h2 class="team-title" id="achievements" >Achievements</h2>
-   <div class="achievement-container">
+  }
+  
+  .name { /* Colleague name */
+    margin-top: 30px;
+    font-size: 35px;
+    font-weight: 80;
+    margin-bottom: 0%;
+  }
+  
+  .profile h5 { /* Job title */
+    font-size: 18px;
+    font-weight: 20;
+    letter-spacing: 3px;
+    color: rgb(12, 16, 69);
+  }
+  
+  .profile p { /* Description */
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: justify;
+    color: rgb(12, 16, 69);
+  }
+  
+  /* @ media section is used to apply styles for different devices */
+  @media only screen and (max-width: 1150px) {
+    .profiles {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .team-member {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .team-member p {
+      text-align: center;
+      margin: 20px 60px 80px 60px;
+      font-size: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .profiles {
+      margin: auto;
     
-    <div class="main-card">
-      <div class="cards">
-        <div class="card">
-         <div class="content">
-           <div class="img">
-                 <img src="/images/gold-star.png" alt="">
-           </div>
-           <div class="details">
-             <div class="achievement-title">JADE 2020</div>
-             <div class="achievement-desc">Supported the JADE 2020 upgrade across systems development</div>
-           </div>
-         </div>
-        </div>
+    }
+   
+  
+    .team-member p {
+      margin: 20px 10px 80px 10px;
+    }
+  }
 
-        <div class="card">
-         <div class="content">
-           <div class="img">
-                 <img src="/images/gold-star.png" alt="">
-           </div>
-           <div class="details">
-             <div class="achievement-title">Additional Requirements</div>
-             <div class="achievement-desc">Delivered a new wizard to log accurately log a customers additional requirements</div>
-           </div>
-         </div>
-        </div>
+/* Achievements Section */
+/* Main container, holds everything*/
+  .achievement-container{
+    margin: 0px 40px;
+    margin-top: -90px;
+    margin-left: 0%;
+    padding: 80px 0 ;
+    position: relative;
+    padding-bottom: 50px;
+    width: 100%;
+   
+  }
+  /* Contains a set of 3 achievment cards*/
+  .achievement-container .main-card{
+    width: 100%;
+    transition: 1s;
+  }
+  
+  /* Individual achievement cards*/
+  .achievement-container .main-card .cards{
+    width: calc(100% / 2 - 10px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 3%;
 
-        
+   
+  }
+  .main-card .cards .card{
+    width: calc(100% / 3 - 10px);
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+  }
+  .main-card .cards .card:hover{
+    transform: translateY(-15px); /* add small animation when card is hovered over*/
+  }
 
-       <div class="card">
-         <div class="content">
-           <div class="img">
-                 <img src="/images/gold-star.png" alt="">
-           </div>
-           <div class="details">
-             <div class="achievement-title">Reducing Stack Dumps</div>
-             <div class="achievement-desc">Fixed over 50,000 re-occuring errors</div>
-           </div>
-         </div>
-        </div>
-    </div>
- </div>
+  .cards .card .content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Controls the img within the achievement card*/
+  .cards .card .content .img{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    padding: 3px;
+    margin-bottom: 14px;
+  }
+
+  .card .content .img img{
+    height: 100%;
+    width: 100%;
+    border: 3px solid #ffff;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+/* Controls the content of the card - headers and para */
+  .card .content .achievement-title{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .card .content .achievement-desc{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    margin-top: 1%;
+  }
+  
+  @media (max-width: 768px) {
+    .main-card .cards .card{
+      margin: 20px 0 10px 0;
+      width: calc(100% / 2 - 10px);
+    
+    }
+  }
+
+  @media (max-width: 600px) {
+    .main-card .cards .card{
+      width: 100%;
+    }
+  }
+  
+  /* Standards Section */
+
+  .sta-title{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(12, 16, 69);
+    font-size: 30px;
+    margin: auto;
+    font-weight: 500;
+  }
+
+/* standards-container holds everything */
+.standards-container{
+margin-top: 10%;
+position: relative;
+  margin-left: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.standards-container .thecard{
+    align-items: center;
+    position: inherit;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+/* thecard class holds the front and back of the cards */
+.thecard{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  align-items: center;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ display: inline-block;
  
-</div>
-        
-   <!-- Standards-->
-    <h2 class="sta-title" id="standards">Standards</h2>
-    <div class="standards-container">
-        <div class="thecard">
+}
 
-          <div class="card-front"><h2>General Agile Standards</h2><p>Please see overleaf for more details.</p></div>
-  
-          <div class="card-back"><p style="margin-left:2em;">
-            General Agile:
-            <li>Highly agile DevOps scrum</li>
-            <li>Track work on a Kanban board</li>
-            <li>2 Week Sprints (Monday - Monday)</li>
-            <li>Proactive ownership of changes</li>
-            <li>Testers & Developers work together (Swarms, pair coding)</li>
-            <li>Challenge & experiment best practice through retro feedback</li>
-          </p>
-          </div>
-  
-        </div>
+/* Controls the transformation (flip) on hover */
+.thecard:hover{
+  transform: rotateY(180deg);
+}
 
-        <div class="thecard">
-  
-            <div class="card-front"><h2>MASC Specific Agile</h2><p>Please see overleaf for more details.</p></div>
+/* The front of the card, which is shown as default*/
+ .card-front{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #fafafa;
+  justify-content: center;  
+  border-color: rgb(29, 114, 164);
+  color: rgb(12, 16, 69);
+}
+
+/* Main title on the front of the card*/
+.card-front h2{
+    align-items: center;
+    font-size: 2rem;
+    line-height: 2;
+    margin-bottom: 4rem;
+    color: rgb(12, 16, 69); 
     
-            <div class="card-back"><p style="margin-left:2em;">
-              Masc Specific Agile:
-              <li>Focus on maintenance & strategic change</li>
-              <li>No dedicated scrum master</li>
-              <li>Ben & Trudy are the product owners</li>
-              <li>In-office ceramnonies (planning, review & retro)</li>
-              <li>Build requirements in Gherkin language</li>
-              <li>Change can be self raised into the hub</li>
-              <li>Themed retro & reviews</li>
-              <li>Capture feedback throughout sprint</li>
-            </p>
-            </div>
-    
-          </div>
+}
 
-          <div class="thecard">
+
+/* Back of the card, which is shown when the user hovers over the card */
+.card-back{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background:rgb(12, 16, 69);
+  color: rgb(255, 255, 255);
+  text-align: left;
+  transform: rotateY(180deg); /* Flips the card 180deg*/
+}
+
+/* Media query below  makess the cards stack when the screen page is smaller */
+@media (max-width: 768px) {
+
+    .standards-container{
+        flex-wrap: wrap;
+    }
+     .thecard, .card-front, .card-back{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .sta-title{
+        margin-bottom: 22%;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(12, 16, 69);
+        font-size: 30px;
+        font-weight: 500;
+    }
+   
+  }
+  @media (max-width: 600px) {
+    .standards-container{
+        margin-top: 95%;
+    } 
+    .thecard, .card-front, .card-back{
+        width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+
+
+  /* Feedback */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
   
-            <div class="card-front"><h2>Dev & Test Specific</h2><p>Please see overleaf for more details.</p></div>
-    
-            <div class="card-back"><p style="margin-left:2em;">
-              Masc Specific Agile:
-              <li>Shout up if stuck and work through issues</li>
-              <li>Dev & Test work together to find solutions</li>
-              <li>Fix bugs found asap to keep flow moving</li>
-              <li>Testers can be involved in coding</li>
-              <li>Testers understand the change to improve testing</li>
-              <li>Check testers understanding - can they explain the change to a developer</li>
-              <li>Automation where possible - can build stubs to support test</li>
-            </p>
-            </div>
-    
-          </div>
-      </div>
-
-    <!-- Feedback -->
-    <section class="feedback" id="feedback">
-        <div class="feedback-container">
-            <div class="header">
-            <div class="column-header">
-                <h2 id="title">Feedback Form</h2>
-                <p id="description">We'd like your help! We want to know a little more about your experience with us so that we can continue to improve the service we provide.</p>
-                </div>
-                <div class="column-image">
-                    <div id="image-div">
-                      <img src="images/SurveyFormLogo.png" width="500" height="400" alt="Survey form icon">
-                    </div>
-                </div>
-            </div>
-            <!-- Name field -->
-            <form id = "survey-form" action="https://formsubmit.co/maschubfeedback@gmail.com" method="POST">
-                <div class="form-group">
-                <label id="name-label" for="name">Name</label>
-                <input
-                    maxlength="100" 
-                    type="text"
-                    name="name"
-                    id="name"
-                    class="form-control"
-                    placeholder="Enter your name..."
-                    required
-                />
-                </div>
-
-                <!-- Business Area -->
-                <div class="form-group">
-                    <p>Business Area</p>
-                    <select id="dropdown" name="role" class="form-control" required>
-                    <option disabled selected value>Please select your business area</option>
-                    <option value="Digital">Digital</option>
-                    <option value="Skipton-Direct">Skipton Direct</option>
-                    <option value="Systems Development">Systems Development</option>
-                    <option value="FA">FA</option>
-                    <option value="Audit">Audit</option>
-                    <option value="Marketing">Marketing</option>
-                    <option value="Operations">Operations</option>
-                    <option value="preferNo">Prefer not to say</option>
-                    <option value="other">Other</option>
-                    </select>
-                </div>
-
-                
-                <div class="form-group">
-                    <label id="otherArea" for="otherArea">If other, please specify</label>
-                    <input
-                    maxlength="20"
-                    type="Other-Business-Area"
-                    name="Other-Business-Area"
-                    id="Other-Business-Area"
-                    class="form-control"
-                    placeholder="If you selected other, please specify your business area"
-                
-                    />
-                </div>
-
-                <!-- Reference -->
-                <div class="form-group">
-                    <label id="ref" for="ref">LANDesk reference or User Story</label>
-                    <input
-                    maxlength="20"
-                    type="LANDesk-UserStory"
-                    name="LANDesk-UserStory"
-                    id="LANDesk-UserStory"
-                    class="form-control"
-                    placeholder="Please enter the LANDesk reference or User Story we helped with"
-                    />
-                </div>
-
-                <!-- MASC Member -->
-                <div class="form-group">
-                    <p>Please confirm who in the MASC hub you worked with (Check all that apply)</p>
-                    <label>
-                    <input 
-                        name="worked-with"
-                        value="Chris Kelly"
-                        type="checkbox"
-                        class="input-checkbox"
-                    />Chris Kelly</label>
-                    
-                    <label>
-                    <input 
-                        name="worked-with"
-                        value="Josh Williams"
-                        type="checkbox"
-                        class="input-checkbox"
-                    />Josh Williams</label>
-                    
-                    <label>
-                    <input
-                        name="worked-with"
-                        value="Nick Fleury"
-                        type="checkbox"
-                        class="input-checkbox"
-                    />Nick Fleury</label>
-                    
-                    <label>
-                    <input
-                        name="worked-with"
-                        value="Olu Orija"
-                        type="checkbox"
-                        class="input-checkbox"
-                    />Olu Orija</label>
-                
-                    <label>
-                    <input
-                        name="worked-with"
-                        value="Nathyn Kerchhoff"
-                        type="checkbox"
-                        class="input-checkbox"
-                    />Nathyn Kerchhoff</label>
-                    
-                    <label>
-                    <input
-                        name="worked-with"
-                        value="Sam Lewis"
-                        type="checkbox"
-                        class="input-checkbox"
-                    />Sam Lewis</label>
-                </div>
-                
-                <!-- Overall Rating -->
-                <div class="form-group" Required>
-                    <p>Overall, how would you rate the Service?</p>
-                    <label>
-                    <input
-                        name="user-rating"
-                        value="excellent"
-                        type="radio"
-                        class="input-radio"
-                    />Excellent</label>
-
-                    <label>
-                    <input
-                        name="user-rating"
-                        value="good"
-                        type="radio"
-                        class="input-radio"
-                    />Good</label>
-            
-                    <label>
-                    <input
-                        name="user-rating"
-                        value="fair"
-                        type="radio"
-                        class="input-radio"
-                    />Fair</label>
-                    
-                    <label>
-                    <input
-                        name="user-rating"
-                        value="poor"
-                        type="radio"
-                        class="input-radio"
-                    />Poor</label>
-                    
-                    <label>
-                    <input
-                        name="user-rating"
-                        value="very-poor"
-                        type="radio"
-                        class="input-radio"
-                    />Very Poor</label>
-                </div>
-                
-                
-                <!-- Recommend -->
-                <div class="form-group" Required>
-                    <p>Would you recommend us?</p>
-                    <label>
-                    <input
-                        name="user-recommend"
-                        value="definitely"
-                        type="radio"
-                        class="input-radio"
-                        
-                    />Definitely</label>
-                    <label>
-                    <input
-                        name="user-recommend"
-                        value="maybe"
-                        type="radio"
-                        class="input-radio"
-                    />Maybe</label>
-            
-                    <label>
-                    <input
-                        name="user-recommend"
-                        value="not-sure"
-                        type="radio"
-                        class="input-radio"
-                    />Probably not</label>
-                </div>
-            
-                <!-- Additional comments -->
-                <div class="form-group">
-                    <p>Any comments or suggestions?</p>
-                    <textarea
-                    id="comments"
-                    class="input-textarea"
-                    name="comment"
-                    maxlength="1000"
-                    placeholder="Enter your comment here..."></textarea>
-                </div>
-            
-                <div class="form-group">
-                    <button type="submit" id="submit" class="submit-button">
-                    Submit
-                    </button>
-                </div>
-                </form>
-            </div>
-        </div>
-    </section>
-      
-       <section class="footer">
-          <p> Design & Development - Sam Lewis </p>
-        </section>
-
-</body>
-</html>
+  label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  input,
+  button,
+  select,
+  textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  
+  button {
+    border: none;
+  }
+  
+    /* Main container that holds all feedback content */
+  .feedback-container {
+    width: 100%;
+    margin: 6rem auto 6rem auto;
+    box-shadow: 0 0.2rem 1.3rem 0.2rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:  rgb(18, 21, 55);
+  }
+  
+  @media (min-width: 576px) {
+    .feedback-container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 976px) {
+    .feedback-container{
+      max-width: 920px;
+    }
+  }
+  
+  .header {
+    padding: 4.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  /*Header*/
+  .column-header {
+    float: left;
+    width: 54%;
+    padding-top: 5rem;
+    margin-right: 6%;
+  }
+  
+  .column-image {
+    float: left;
+    width: 40%;
+  }
+  
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .column-header,
+    .column-image {
+      width: 100%;
+      margin: 0;
+    }
+    #image-div img {
+      margin: auto;
+    }
+  }
+  
+  /* FeedbackForm*/
+  
+  form {
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+  }
+  
+  .form-group {
+    margin: 0 auto 2rem auto;
+    padding: 0.5rem;
+  }
+  
+  .form-control {
+    display: block;
+    width: 100%;
+    height: 4.5rem;
+    padding: 1rem;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .form-control:focus {
+    border-color: #a6d8e2;
+    outline: 0;
+    box-shadow: 0 0 1rem 0.2rem rgba(205, 240, 247, 0.25);
+  }
+  
+  .input-radio,
+  .input-checkbox {
+    display: inline-block;
+    margin-right: 1rem;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+  }
+  
+  .input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 1rem;
+    resize: vertical;
+  }
+  
+  .submit-button {
+    display: inline-block;
+    width: 10rem;
+    padding: 1rem;
+    background: #4a4a4a;
+    color: #fff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+  }
+  
+  @keyframes background-color {
+      100% {
+        background-color: rgb(125, 132, 231);
+      }
+  }
