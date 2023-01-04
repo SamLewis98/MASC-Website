@@ -449,15 +449,13 @@ position: relative;
 @media (max-width: 768px) {
 
     .standards-container{
-        flex-wrap: wrap;
-        margin: auto;
         margin-top: 70%;
-    
     }
-     .thecard, .card-front, .card-back{
-        width: 100%;
-        flex-wrap: wrap;
+
+    .thecard, .card-front, .card-back{
+        margin: auto;
     }
+   
     .sta-title{
         margin-bottom: 55%;
         text-align: center;
@@ -469,17 +467,8 @@ position: relative;
    
   }
   @media (max-width: 600px) {
-    .standards-container{
-        margin-top: 95%;
-        width: 100%;
-    } 
-    .thecard, .card-front, .card-back{
-        width: 100%;
-      flex-wrap: wrap;
-    }
-    .sta-title{
-        margin-bottom: 10%;
-    }
+    
+
   }
 
 
