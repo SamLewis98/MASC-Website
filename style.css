@@ -337,16 +337,11 @@ h1, h2, h3 {
 
 /* standards-container holds everything */
 .standards-container{
-margin-top: 10%;
-position: relative;
-  margin-left: 10px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    margin: 20px 40px;
+   /* transform: translate(-50%, -50%);*/
 }
 .standards-container .thecard{
     align-items: center;
-    position: inherit;
     border-radius: 12px;
     padding: 10px;
     margin-left: 110px;
@@ -354,9 +349,8 @@ position: relative;
 
 /* thecard class holds the front and back of the cards */
 .thecard{
-  position: relative;
-  top: 0;
-  left: 0;
+  
+  
   width: 400px;
   height: 300px;
   border-radius: 10px;
@@ -418,11 +412,7 @@ position: relative;
 }
 
 /* Media query below  makess the cards stack when the screen page is smaller */
-@media (max-width: 768px) {
-
-    .standards-container{
-        margin-top: 70%;
-    }
+@media (max-width: 600px) {
 
     .thecard, .card-front, .card-back{
         margin: auto;
@@ -438,11 +428,6 @@ position: relative;
     }
    
   }
-  @media (max-width: 600px) {
-    
-
-  }
-
 
   /* Feedback */
   img {
