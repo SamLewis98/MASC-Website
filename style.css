@@ -223,8 +223,6 @@ h1, h2, h3 {
   }
 
 /* Achievements Section */
-/* Main container, holds everything*/
-
 .ach-title {
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -233,6 +231,8 @@ h1, h2, h3 {
     font-weight: 500;
     margin: auto;
   }
+
+  /* Main container, holds everything*/
   .achievement-container{
     margin: 0px 40px;
     margin-top: -90px;
@@ -241,8 +241,8 @@ h1, h2, h3 {
     position: relative;
     padding-bottom: 50px;
     width: 100%;
-   
   }
+
   /* Contains a set of 3 achievment cards*/
   .achievement-container .main-card{
     width: 100%;
@@ -257,9 +257,8 @@ h1, h2, h3 {
     margin: auto;
     justify-content: space-between;
     margin-top: 3%;
-
-   
   }
+
   .main-card .cards .card{
     width: calc(100% / 3 - 10px);
     background: #fff;
@@ -268,6 +267,7 @@ h1, h2, h3 {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
     transition: all 0.4s ease;
   }
+
   .main-card .cards .card:hover{
     transform: translateY(-15px); /* add small animation when card is hovered over*/
   }
@@ -325,7 +325,6 @@ h1, h2, h3 {
   }
   
   /* Standards Section */
-
   .sta-title{
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -336,15 +335,16 @@ h1, h2, h3 {
   }
 
 /* standards-container holds everything */
-.standards-container{
+.standards-container .max-width{
     margin: auto;
-   /* transform: translate(-50%, -50%);*/
+    align-items: center;
 }
+
 .standards-container .thecard{
     align-items: center;
     border-radius: 12px;
     padding: 10px;
-    margin-left: 110px;
+    margin-left: 145px;
 }
 
 /* thecard class holds the front and back of the cards */
@@ -358,7 +358,6 @@ h1, h2, h3 {
   text-align: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  display: inline-block;
- 
 }
 
 /* Controls the transformation (flip) on hover */
@@ -412,11 +411,15 @@ h1, h2, h3 {
 /* Media query below  makess the cards stack when the screen page is smaller */
 @media (max-width: 600px) {
 
-
+    .standards-container .thecard{
+        align-items: center;
+        border-radius: 12px;
+        padding: 10px;
+        margin-left: 10px;
+    }
     .thecard, .card-front, .card-back{
         margin: auto;
         width: calc(100% / 2 - 10px);
-        align-items: center;
     }
    
     .sta-title{
@@ -427,7 +430,6 @@ h1, h2, h3 {
         font-size: 30px;
         font-weight: 500;
     }
-   
   }
 
   /* Feedback */
