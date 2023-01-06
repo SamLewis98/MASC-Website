@@ -337,7 +337,7 @@ h1, h2, h3 {
 
 /* standards-container holds everything */
 .standards-container{
-    margin: 30px 40px;
+    margin: 60px 40px;
    /* transform: translate(-50%, -50%);*/
 }
 .standards-container .thecard{
