@@ -416,6 +416,7 @@ h1, h2, h3 {
     .thecard, .card-front, .card-back{
         margin: auto;
         width: calc(100% / 2 - 10px);
+        align-items: center;
     }
    
     .sta-title{
