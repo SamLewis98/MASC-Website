@@ -337,7 +337,7 @@ h1, h2, h3 {
 
 /* standards-container holds everything */
 .standards-container{
-    margin: 20px 40px;
+    margin: 30px 40px;
    /* transform: translate(-50%, -50%);*/
 }
 .standards-container .thecard{
@@ -349,8 +349,6 @@ h1, h2, h3 {
 
 /* thecard class holds the front and back of the cards */
 .thecard{
-  
-  
   width: 400px;
   height: 300px;
   border-radius: 10px;
@@ -414,8 +412,10 @@ h1, h2, h3 {
 /* Media query below  makess the cards stack when the screen page is smaller */
 @media (max-width: 600px) {
 
+
     .thecard, .card-front, .card-back{
         margin: auto;
+        width: calc(100% / 2 - 10px);
     }
    
     .sta-title{
